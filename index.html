@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>
+      Evaluasi Efektivitas Pelatihan Sepak Bola dan Kebutuhan Pemain
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="Header">
+      <h1>Pelatihan minat IT</h1>
+      <p>
+        Ayo isi formulir ini untuk mengikuti activitas Pelatihan minat IT,
+        biarkan kami tau kamu minat dimana?
+      </p>
+    </header>
+
+    <main>
+      <form>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Isi nama anda" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Isi email anda"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <p>Silahkan Pilih Minat Anda</p>
+          <select name="minat" id="minat">
+            <option disabled selected value>Pilih</option>
+            <option value="programming">Programming</option>
+            <option value="multi-media">Multi-Media</option>
+            <option value="iot">IoT</option>
+            <option value="robotik">Robotik</option>
+          </select>
+        </div>
+
+        <!-- social media -->
+        <div class="form-group form-control">
+          <p>Darimana anda mengetahui kami?</p>
+          <div class="sosmed">
+            <label for="instagram">Instagram</label>
+            <input type="radio" name="sosmed" value="instagram" />
+          </div>
+          <div class="sosmed">
+            <label for="facebook">Facebook</label>
+            <input type="radio" name="sosmed" value="facebook" />
+          </div>
+          <div class="sosmed">
+            <label for="teman">Teman</label>
+            <input type="radio" name="sosmed" value="teman" />
+          </div>
+        </div>
+
+        <!-- Check Box -->
+        <div>
+          <label for=""></label>
+        </div>
+        <!-- input textarea -->
+
+        <label for="comments">Jika ada kendala mohon di bertanya disini</label>
+        <textarea
+          id="comments"
+          name="comments"
+          rows="4"
+          placeholder="Kendala saya ada di..."
+        ></textarea>
+
+        <button type="button">Kirim</button>
+      </form>
+    </main>
+  </body>
+</html>
